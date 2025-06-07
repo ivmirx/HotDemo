@@ -1,0 +1,31 @@
+{
+  "ConsoleHost": {
+    "ExpectedClients": [
+      {
+        "Address": "localhost",
+        "Port": 50125
+      }
+    ]
+  },
+  "FileWatcher": {
+    "RootPath": "",
+    "Ignore": [
+      "/obj/",
+      "/bin/"
+    ]
+  },
+  "AssemblyCompiler": {
+    "Debug": true,
+    "PreprocessorSymbols": [
+      "DEBUG",
+      "__RELOAD__"
+    ],
+    "GlobalUsingsSources": [
+      {
+        "Kind": "SearchPath",
+        "Reference": "HotDroid/obj/Debug/net9.0-android",
+        "Context": "LastModified"
+      }
+    ]
+  }
+}

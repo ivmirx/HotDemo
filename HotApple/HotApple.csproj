@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-ios</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
+
+    <!--
+      Enable full trimming in Release mode.
+      To learn more, see: https://learn.microsoft.com/dotnet/core/deploying/trimming/trimming-options#trimming-granularity
+    -->
+    <TrimMode Condition="'$(Configuration)' == 'Release'">full</TrimMode>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchDebug>true</MtouchDebug>
+    <UseInterpreter>true</UseInterpreter>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="tbc.target" Version="0.0.20241105.2" />
+  </ItemGroup>
+</Project>

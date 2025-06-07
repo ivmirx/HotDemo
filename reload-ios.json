@@ -1,0 +1,34 @@
+{
+  "ConsoleHost": {
+    "ExpectedClients": [
+      {
+        "Address": "localhost",
+        "Port": 50130
+      }
+    ]
+  },
+  "FileWatcher": {
+    "RootPath": "",
+    "Ignore": [
+      "/obj/",
+      "/bin/"
+    ]
+  },
+  "AssemblyCompiler": {
+    "Debug": true,
+    "PreprocessorSymbols": [
+      "DEBUG",
+      "__RELOAD__"
+    ],
+    "GlobalUsingsSources": [
+      {
+        "Kind": "SearchPath",
+        "Reference": "HotApple/obj/Debug/net9.0-ios",
+        "Context": "LastModified"
+      }
+    ],
+    "iOSDynamicRegistrationOptions": {
+      "Enabled": true
+    }
+  }
+}
